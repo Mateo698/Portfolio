@@ -1,3 +1,18 @@
 .container{
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65px;
+}
+
+.section{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;    
+    justify-content: center;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
