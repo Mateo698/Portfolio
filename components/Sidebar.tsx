@@ -10,19 +10,15 @@ class section {
 
 interface SidebarProps {
     sections: section[];
+    changePage: (newPage: number, setActive: (newActive: number) => void) => void;
 }
 
-export default function Sidebar(sections: SidebarProps) {
+export default function Sidebar(props: SidebarProps) {
     const [active, setActive] = useState(0);
-    const handleClick = (index: number) => {
-        setActive(index);
-        console.log(index);
-    }
-
     return (
         <div className={styles.container}>
-            {sections.sections.map((section, index) => (
-                <div key={index} className={styles.section} onClick={() => handleClick(index)}>
+            {props.sections.map((section, index) => (
+                <div key={index} className={styles.section} onClick={() => props.changePage(index,setActive)}>
                     <div className={styles.line} style={active === index ? { visibility: "visible" } : { visibility: "hidden" }}></div>
                     <div>
                         <h3>{section.title}</h3>

@@ -15,6 +15,12 @@
     justify-content: center;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    cursor: pointer;
+
+}
+
+.section:hover{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .line{

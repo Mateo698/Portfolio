@@ -1,17 +1,20 @@
 import Sidebar from "../components/Sidebar"
+import Page from "../components/Page"
 import styles from '../styles/Home.module.css'
+import Test from "../components/Test"
+import { useState } from "react"
 
-const sections = [
-  {title: "About"},
-  {title: "Projects"},
-  {title: "Skills"},
-  {title: "Contact"}
-]
 
-export default function Home(){
+interface IndexProps {
+  page: number;
+}
+
+export default function Home(props: IndexProps) {
+  const [page, setPage] = useState(0)
   return (
     <div className={styles.container}>
-      <Sidebar sections={sections}/>
+      {page === 0 ? <Test/> : <Page/>}
+      
     </div>
   )
 }
