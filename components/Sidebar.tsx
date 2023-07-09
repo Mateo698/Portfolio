@@ -19,11 +19,15 @@ export default function Sidebar(sections: SidebarProps) {
         console.log(index);
     }
 
-    return(
+    return (
         <div className={styles.container}>
             {sections.sections.map((section, index) => (
-                <div key={index} className={styles.section} onClick={() => handleClick(index)} style={active === index ? {backgroundColor: "#e5e5e5"} : {}}>
-                    <h3>{section.title}</h3>
+                <div key={index} className={styles.section} onClick={() => handleClick(index)}>
+                    <div className={styles.line} style={active === index ? { visibility: "visible" } : { visibility: "hidden" }}></div>
+                    <div>
+                        <h3>{section.title}</h3>
+                    </div>
+                    
                 </div>
             ))}
         </div>
