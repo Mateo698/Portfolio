@@ -1,10 +1,13 @@
 import styles from '../styles/Sidebar.module.css'
 import { useState } from 'react';
 
+
 class section {
     title: string;
-    constructor(title: string) {
+    icon: any;
+    constructor(title: string, icon: any) {
         this.title = title;
+        this.icon = icon;
     }
 }
 
@@ -19,9 +22,8 @@ export default function Sidebar(props: SidebarProps) {
         <div className={styles.container}>
             {props.sections.map((section, index) => (
                 <div key={index} className={styles.section} onClick={() => props.changePage(index,setActive)}>
-                    <div className={styles.line} style={active === index ? { visibility: "visible" } : { visibility: "hidden" }}></div>
                     <div>
-                        <h3>{section.title}</h3>
+                        {section.icon}
                     </div>
                     
                 </div>
