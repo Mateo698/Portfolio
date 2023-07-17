@@ -5,7 +5,6 @@ import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
-
 import { useState } from 'react'
 import {GoHome} from 'react-icons/go';
 import {GoGitPullRequest} from 'react-icons/go';

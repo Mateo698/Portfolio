@@ -3,5 +3,5 @@
   height: 100%;
   flex-grow: 1;
   flex-direction: row;
-  
+  border: 1px solid red;
 }
