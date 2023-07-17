@@ -39,17 +39,15 @@
 }
 
 .socialButton{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2vw;
+    margin-right: 2vw;
     border-radius: 5px;
 }
 
 .resumeButton{
-    margin-left: 20px;
-    margin-right: 20px;
     border-radius: 15px;
-    height: 50px;
-    width: 100px;
+    height: 7vh;
+    width: 9vw;
 }
 
 .imageContainer{    
@@ -63,4 +61,74 @@
     border-radius: 50%;
     border: 5px solid #25283D;
     object-fit: cover;
+}
+
+.text1{
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.text2{
+    font-weight: heavier;
+    font-size: 70px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+@media(max-width: 768px) {
+    .container{
+        width: 100vw;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .description{
+        padding-top: 4vh;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        width: 100vw;  
+    }
+
+    .text1{
+        font-weight: lighter;
+        font-size: 8vw;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .text2{
+        font-weight: heavier;
+        font-size: 10vw;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .imageContainer{    
+        width: 50vw;
+        height: 35vh;
+        padding-top: 10vh;
+    }
+
+    .image{
+
+        border-radius: 50%;
+        border: 5px solid #25283D;
+        object-fit: cover;
+    }
+
+    .resumeButton{
+        border-radius: 15px;
+        height: 7vh;
+        width: 22vw;
+    }
+
+
 }
