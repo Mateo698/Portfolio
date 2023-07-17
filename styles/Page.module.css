@@ -6,27 +6,55 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.description{
+    width: 45vw;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    margin-bottom: 12vh; 
 }
 
 .social{
-    width: 100%;
-    height: 100%;
+    width: 40vw;
+    height: 10vh;
     flex-grow: 1;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
-    border: 1px solid white;
+    
+}
+
+.buttonContainer{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+
 }
 
 .socialButton{
     margin-left: 20px;
     margin-right: 20px;
+    border-radius: 5px;
+}
+
+.resumeButton{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
 }
 
 .imageContainer{    
-    width: 400px;
-    height: 400px;
+    width: 30vw;
+    height: 60vh;
 }
 
 .image{

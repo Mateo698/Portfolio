@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }
 
   return (
-    <div style={{display: "flex", flexDirection: "row",width:"calc(100%)",height:"calc(100%)"}}>
+    <div className='maxContainer'>
       <Sidebar sections={sections} changePage={changePage}/>
       {renderSwitch(page)}
     </div>

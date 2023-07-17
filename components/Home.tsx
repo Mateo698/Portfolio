@@ -7,18 +7,25 @@ export default function Page() {
     return (
         <div className={styles.container}>
             <div className={styles.description}>
-                <h2 style={{ fontWeight: 'lighter', width: '700px', fontSize: '50px', marginBottom: -50 }}>Hi!</h2>
-                <h1 style={{ fontWeight: 'heavy', width: '700px', fontSize: '70px', marginBottom: -50 }}> I'm Mateo Rada</h1>
-                <h3 style={{ fontWeight: 'lighter', width: '700px', fontSize: '50px' }}>Software System Engineer, student at ICESI University</h3>
+                <h2 style={{ fontWeight: 'lighter', fontSize: '50px', marginBottom: -50 }}>Hi!</h2>
+                <h1 style={{ fontWeight: 'heavy', fontSize: '70px', marginBottom: -50 }}> I'm Mateo Rada</h1>
+                <h3 style={{ fontWeight: 'lighter', fontSize: '50px' }}>Software System Engineer, student at ICESI University</h3>
                 <div className={styles.social}>
-                    <button className={styles.socialButton} onClick={() => window.open('https://www.linkedin.com/in/mateo-rada-ramirez-8b0b3a1b0/')}>
-                        <RxLinkedinLogo size={50} />
-                    </button>
-                    <button className={styles.socialButton}>
-                        <RxGithubLogo size={50} />
-                    </button>
-
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.socialButton} onClick={() => window.open('https://www.linkedin.com/in/mateo-rada-arias-b44503239/')}>
+                            <RxLinkedinLogo size={40} />
+                        </button>
+                        <button className={styles.socialButton} onClick={() => window.open('https://github.com/Mateo698')}>
+                            <RxGithubLogo size={40} />
+                        </button>
+                    </div>
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.resumeButton}>
+                            <p style={{ fontSize: 20, fontWeight: 'lighter', margin: 0 }}>Resume</p>
+                        </button>
+                    </div>
                 </div>
+                
             </div>
             <div className={styles.imageContainer}>
                 <img className={styles.image} src={Profile.src} alt="Profile" height={500} />
