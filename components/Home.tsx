@@ -8,7 +8,7 @@ export default function Page() {
         <div className={styles.container}>
             <div className={styles.description}>
                 <h2 className={styles.text1}>Hi!</h2>
-                <h1 className={styles.text2}> I'm Mateo Rada</h1>
+                <h1 className={styles.text2}> I&apos;m Mateo Rada</h1>
                 <h3 className={styles.text1}>Software System Engineer, student at ICESI University</h3>
                 <div className={styles.social}>
                     <div className={styles.buttonContainer}>
