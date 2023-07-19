@@ -1,0 +1,69 @@
+.cardContainer{
+    width: 65%;
+    height: 20vw;
+    border-radius: 15px;   
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    border: 1px solid black;
+    background-color: #E0E2DB;
+}
+
+.imageContainer{
+    height: 100%;
+    width: 60%;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.information{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: black;
+    
+}
+
+.title{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.description{
+    font-size: 1.5vw;
+    margin-top: 0px;
+}
+
+
+@media (max-width: 768px) {
+    .card{
+        flex-direction: column;
+        width: 80%;
+        height: 80vh;
+        
+    }
+    .imageContainer{
+        width: 100%;
+        height: 50%;
+    }
+    .text{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .card{
+        flex-direction: row;
+        width: 50vw;
+        height: 40vh;
+    }
+    .image{
+        width: 35%;
+        height: 100%;
+    }
+    .text{
+        width: 65%;
+        height: 100%;
+    }
+}

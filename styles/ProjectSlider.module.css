@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    padding-bottom: 2vh;
+
+}
+
+.arrowUp{
+    clip-path: polygon(0 40%, 50% 0, 100% 40%, 100% 100%, 50% 61%, 0 100%);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: white;
+    width: 5vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.arrowDown{
+    clip-path: polygon(0 0, 51% 34%, 100% 0, 100% 61%, 51% 100%, 0 63%);
+    cursor: pointer;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: white;
+    width: 5vw;
+    height: 5vh;
+}

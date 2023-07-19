@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [changing, setChanging] = useState("page")
 
   const changePage = (newPage: number, setActive: (newActive: number) => void) => {
+    if(newPage == page) return
     setChanging("pageChange")
     setTimeout(() => {
       setChanging("page")
@@ -34,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       setPage(newPage)
       setActive(newPage)
       console.log(page)
-    }, 500);
+    }, 300);
   }
 
   function renderSwitch(param: number) {
