@@ -13,12 +13,18 @@ const imageStyle = {
 
 const projects = [
     {
-        image: <img src={logo.src} style={imageStyle} />,
+        image: <img src={logo.src} style={{objectFit: 'cover',
+        height: '100%',
+        width: '100%',
+        borderRadius: '15px 0px 0px 15px'}} />,
         title: "Syri a la mano",
         description: "Syri a la mano fue una aplicacion pensada para oficina de Multimedios en la que se podia ver el estado del trafico en la ciudad de Monterrey, Nuevo Leon, Mexico. La aplicacion se desarrollo en React Native y se utilizo la API de Google Maps para obtener los datos de trafico."
     }
     , {
-        image: <img src={logo.src} style={imageStyle} />,
+        image: <img src={logo.src} style={{objectFit: 'cover',
+        height: '100%',
+        width: '100%',
+        borderRadius: '15px 0px 0px 15px'}} />,
         title: "E-Shop",
         description: ""
     }]
