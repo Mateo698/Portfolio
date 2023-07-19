@@ -5,7 +5,7 @@ export default function Page() {
     return (
         <div className={styles.container} >
             <h1 style={{marginBottom:'1vh'}}>Projects</h1>
-            <ProjectSlider/>
+            
         </div>
     )
 }
