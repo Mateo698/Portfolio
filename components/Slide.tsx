@@ -4,12 +4,13 @@ import styles from '../styles/Slide.module.css'
 interface SlideProps {
     image: React.ReactNode,
     title: string,
-    description: string
+    description: string,
+    link: string
 }
 
 export default function Slide(props: SlideProps){
     return(
-        <div className={styles.cardContainer} >
+        <div className={styles.cardContainer} style={{cursor:'pointer'}} onClick={() => window.open(props.link)}>
             <div className={styles.imageContainer}>
                 {props.image}
             </div>
