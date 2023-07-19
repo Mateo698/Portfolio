@@ -1,4 +1,4 @@
-import styles from '../styles/Page.module.css';
+import styles from '../styles/Projects.module.css';
 
 export default function Page() {
     return (
