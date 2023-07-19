@@ -29,9 +29,9 @@ const projects = [
         description: ""
     }]
 
-const slides = projects.map((project) => {
+const slides = projects.map((project,index) => {
     return (
-        <Slide image={project.image} title={project.title} description={project.description} />
+        <Slide key={index} image={project.image} title={project.title} description={project.description} />
     )
 }
 )

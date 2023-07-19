@@ -7,7 +7,7 @@ interface SlideProps {
     description: string
 }
 
-export default function(props: SlideProps){
+export default function Slide(props: SlideProps){
     return(
         <div className={styles.cardContainer} >
             <div className={styles.imageContainer}>
