@@ -62,12 +62,7 @@ export default function ProjectSlider() {
     const [index, setIndex] = useState(0)
     const refs = slides.map(() => useRef<HTMLDivElement>(null))
 
-    /* eslint-disable */
-    useEffect(() => {
-        setTimeout(() => {
-            changeSlide("down")
-        }, 2000)
-    }, [index])
+
         
 
     function changeSlide(direction: string) {
