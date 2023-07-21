@@ -1,6 +1,6 @@
 import Slide from "./Slide"
 import Image from "next/image"
-import { useState,useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import styles from "../styles/ProjectSlider.module.css"
 import logo from "../public/logo.jpg"
 
@@ -44,49 +44,72 @@ const projects = [
         title: "Red de programacion competitiva",
         description: "Fue un proyecto final del curso Proyecto Integrador 1 la cual permitia la administracion de usuarios, torneos e inscripciones de los estudiantes a los diferentes torneos. Hecha en NextJS y NodeJS con base de datos PostgreSQL",
         link: "https://github.com/redprogramacioncompetitiva/contests-management-system-2022-1"
-    },    
-        ]
+    },
+]
 
 const slides = projects.map((project, index) => {
     return (
         <Slide key={index} image={project.image} title={project.title} description={project.description} link={project.link} />
     )
-}
-)
+})
+
+
 
 
 
 export default function ProjectSlider() {
-    const [currentSlide, setCurrentSlide] = useState(slides[0])
+    /* eslint-disable */
+    const [index, setIndex] = useState(0)
+    const refs = slides.map(() => useRef<HTMLDivElement>(null))
+
+    /* eslint-disable */
+    useEffect(() => {
+        setTimeout(() => {
+            changeSlide("down")
+        }, 2000)
+    }, [index])
+        
 
     function changeSlide(direction: string) {
-        let index = slides.indexOf(currentSlide)
-        if (direction == "up") {
+        if (direction === "up") {
             if (index == 0) {
-                setCurrentSlide(slides[slides.length - 1])
+                refs[slides.length - 1].current?.scrollIntoView({ behavior: "smooth" })
+                setIndex(slides.length - 1)
             } else {
-                setCurrentSlide(slides[index - 1])
+                refs[index - 1].current?.scrollIntoView({ behavior: "smooth" })
+                setIndex(index - 1)
             }
         } else {
-            if (index == slides.length - 1) {
-                setCurrentSlide(slides[0])
-            } else {
-                setCurrentSlide(slides[index + 1])
+            if (index === 0) {
+                refs[1].current?.scrollIntoView({ behavior: "smooth" })
+                setIndex(1)
+            } else if (index === slides.length - 1) {
+                refs[0].current?.scrollIntoView({ behavior: "smooth" })
+                setIndex(0)
+            }else{
+                refs[index + 1].current?.scrollIntoView({ behavior: "smooth" })
+                setIndex(index + 1)
             }
         }
-        getSlideStyle()
-    }
-
-    const getSlideStyle = () => {
         
     }
 
 
-        return (
-            <div className={styles.container}>
-                <div className={styles.arrowUp} onClick={() => changeSlide("up")}></div>
-                {currentSlide}
-                <div className={styles.arrowDown} onClick={() => changeSlide("down")}></div>
+
+    return (
+        <div className={styles.container}>
+            <div className={styles.arrowUp} onClick={() => changeSlide("up")}></div>
+            <div className={styles.slideContainer}>
+                {slides.map((slide, index) => {
+                    return (
+                        <div key={index} className={styles.slide} ref={refs[index]}>
+                            {slide}
+                        </div>
+                    )
+                })
+                }
             </div>
-        )
-    }
+            <div className={styles.arrowDown} onClick={() => changeSlide("down")}></div>
+        </div>
+    )
+}
