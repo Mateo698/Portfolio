@@ -3,6 +3,9 @@ import Image from "next/image"
 import { useState, useRef, useEffect } from "react"
 import styles from "../styles/ProjectSlider.module.css"
 import logo from "../public/logo.jpg"
+import syri from "../public/syri.png"
+import eShop from "../public/eshop.png"
+import competitiva from "../public/competitiva.png"
 
 const imageStyle = {
     objectFit: 'cover',
@@ -13,7 +16,7 @@ const imageStyle = {
 
 const projects = [
     {
-        image: <img src={logo.src} style={{
+        image: <img src={syri.src} style={{
             objectFit: 'cover',
             height: '100%',
             width: '100%',
@@ -24,7 +27,7 @@ const projects = [
         link: "https://github.com/Mateo698/Syri-A-La-Mano"
     }
     , {
-        image: <img src={logo.src} style={{
+        image: <img src={eShop.src} style={{
             objectFit: 'cover',
             height: '100%',
             width: '100%',
@@ -35,7 +38,7 @@ const projects = [
         link: "https://github.com/IcesiComputacionInternet/TallerFinal/tree/Grupo_8"
     },
     {
-        image: <img src={logo.src} style={{
+        image: <img src={competitiva.src} style={{
             objectFit: 'cover',
             height: '100%',
             width: '100%',
