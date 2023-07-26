@@ -1,5 +1,5 @@
 import styles from '../styles/Skills.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import reactLogo from '../public/logos/react.png';
 import nextLogo from '../public/logos/next.png';
 import cssLogo from '../public/logos/css.png';
@@ -12,13 +12,6 @@ import pythonLogo from '../public/logos/python.png';
 import postgresLogo from '../public/logos/postgres.png';
 import firebaseLogo from '../public/logos/firebase.png';
 import javaLogo from '../public/logos/java.png';
-
-const imgStyle = {
-    width: '60px',
-    height: '60px',
-    objectFit: 'contain',
-    objectPosition: 'center',
-}
 
 /* eslint-disable */
 const technicalSkillsList = [
@@ -135,6 +128,7 @@ const technicalSkillsList = [
 
 
 const technicalSkills = () => {
+
     return (
         <div className={styles.contentContainer}>
             <h2 style={{ fontWeight: 'lighter' }}>Programming Languages and Frameworks i&apos;m familiar with</h2>
@@ -177,6 +171,9 @@ const softSkills = () => {
 
 export default function Page() {
     const [page, setPage] = useState(0)
+    const [changing, setChanging] = useState(styles.static)
+
+
 
     function renderSwitch(param: number) {
         switch (param) {
@@ -191,8 +188,14 @@ export default function Page() {
         }
     }
 
-    const handlePageChange = (page: number) => {
-        setPage(page)
+    const handlePageChange = (newPage: number) => {
+        if(newPage == page) return
+        setChanging(styles.changing)
+        setTimeout(() => {
+            setChanging(styles.static)
+            setPage(newPage)
+        }, 300);
+        
     }
 
     return (
@@ -203,7 +206,10 @@ export default function Page() {
                 <button className={styles.skillButton} onClick={() => handlePageChange(1)}>Professional</button>
                 <button className={styles.skillButton} onClick={() => handlePageChange(2)}>Soft</button>
             </div>
-            {renderSwitch(page)}
+            <div className={changing}>
+                {renderSwitch(page)}
+            </div>
+            
         </div>
     )
 }

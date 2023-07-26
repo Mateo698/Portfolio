@@ -3,7 +3,22 @@ import Profile from '../public/ProfileLowerRes.jpg';
 import { RxGithubLogo } from "react-icons/rx";
 import { RxLinkedinLogo } from 'react-icons/rx';
 
+
 export default function Page() {
+
+    const handleClick = () => {
+        fetch('HV.pdf').then((response) => {
+            response.blob().then((blob) => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Resume.pdf';
+                alink.click();
+            });
+        });
+    }
+
+
     return (
         <div className={styles.container}>
             <div className={styles.description}>
@@ -20,9 +35,12 @@ export default function Page() {
                         </button>
                     </div>
                     <div className={styles.buttonContainer}>
-                        <button className={styles.resumeButton}>
+                        
+                        <button className={styles.resumeButton} onClick={handleClick}>
                             <p style={{ fontSize: 20, fontWeight: 'lighter', margin: 0 }}>Resume</p>
                         </button>
+
+                        
                     </div>
                 </div>
                 

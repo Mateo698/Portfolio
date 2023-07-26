@@ -7,12 +7,6 @@ import syri from "../public/syri.png"
 import eShop from "../public/eshop.png"
 import competitiva from "../public/competitiva.png"
 
-const imageStyle = {
-    objectFit: 'cover',
-    height: '100%',
-    width: '100%',
-    borderRadius: '15px 0px 0px 15px'
-}
 
 const projects = [
     {
