@@ -7,8 +7,8 @@
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
 }
 
@@ -81,7 +81,7 @@
     align-items: center;
     width: 10vw;
     height: 20vh;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
     margin: 20px;
 }

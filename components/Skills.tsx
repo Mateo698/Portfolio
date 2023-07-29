@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import reactLogo from '../public/logos/react.png';
 import nextLogo from '../public/logos/next.png';
 import cssLogo from '../public/logos/css.png';
-import vueLogo from '../public/logos/vue.png';
+import vueLogo from '../public/logos/vue.svg';
 import htmlLogo from '../public/logos/html.png';
 import jsLogo from '../public/logos/js.png';
 import tsLogo from '../public/logos/ts.png';
@@ -12,6 +12,18 @@ import pythonLogo from '../public/logos/python.png';
 import postgresLogo from '../public/logos/postgres.png';
 import firebaseLogo from '../public/logos/firebase.png';
 import javaLogo from '../public/logos/java.png';
+import scrumLogo from '../public/logos/scrum.png';
+import MVC from '../public/logos/mvc.png';
+import Database from '../public/logos/database.png';
+import versionControl from '../public/logos/github.png';
+import linux from '../public/logos/linux.png';
+import softwareArchitecture from '../public/logos/architecture.png';
+import cloud from '../public/logos/cloud.png';
+import docker from '../public/logos/docker.png';
+import api from '../public/logos/api.png';
+import problemsolving from '../public/logos/problemsolving.png';
+import teamwork from '../public/logos/teamwork.png';
+
 
 /* eslint-disable */
 const technicalSkillsList = [
@@ -126,6 +138,116 @@ const technicalSkillsList = [
     },
 ]
 
+const professionalSkillsList = [
+    {
+        name: 'Scrum',
+        img: <img src={scrumLogo.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }
+        } />
+    },
+    {
+        name: 'MVC',
+        img: <img src={MVC.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }} />
+    },
+    {
+        name: 'Databases',
+        img: <img src={Database.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Version Control',
+        img: <img src={versionControl.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Linux',
+        img: <img src={linux.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Software Architecture',
+        img: <img src={softwareArchitecture.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Cloud Computing',
+        img: <img src={cloud.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Dockers',
+        img: <img src={docker.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'APIs',
+        img: <img src={api.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Problem Solving',
+        img: <img src={problemsolving.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    },
+    {
+        name: 'Teamwork',
+        img: <img src={teamwork.src} style={{
+            width: '60px',
+            height: '60px',
+            objectFit: 'contain',
+            objectPosition: 'center'
+        }}/>
+    }
+]
+
+const blank = () => {
+    return(
+        <div className={styles.contentContainer}>
+
+        </div>
+    )
+}
 
 const technicalSkills = () => {
 
@@ -155,7 +277,24 @@ const technicalSkills = () => {
 const professionalSkills = () => {
     return (
         <div className={styles.contentContainer}>
-            prof
+            <h2 style={{ fontWeight: 'lighter' }}>Software Engineering skills i&apos;ve acquired at ICESI University</h2>
+            <div className={styles.skills}>
+                {professionalSkillsList.map((skill) => {
+                    return (
+                        <div className={styles.skillContainer}>
+                            <div className={styles.skillImgContainer}>
+                                {skill.img}
+                            </div>
+                            <div className={styles.skillNameContainer}>
+                                <h3 style={{
+                                    textAlign: 'center'
+                                }}>{skill.name}</h3>
+                            </div>
+                        </div>
+                    )
+                }
+                )}
+            </div>
         </div>
     )
 }
@@ -163,7 +302,7 @@ const professionalSkills = () => {
 const softSkills = () => {
     return (
         <div className={styles.contentContainer}>
-            soft
+            <h2 style={{ fontWeight: 'lighter' }}>Soft skills i&apos;ve acquired through out my personal and academic life</h2>
         </div>
     )
 }
@@ -184,18 +323,19 @@ export default function Page() {
             case 2:
                 return softSkills();
             default:
-                return technicalSkills();
+                return blank();
         }
     }
 
     const handlePageChange = (newPage: number) => {
-        if(newPage == page) return
+
+        if (newPage == page) return
         setChanging(styles.changing)
         setTimeout(() => {
             setChanging(styles.static)
             setPage(newPage)
         }, 300);
-        
+
     }
 
     return (
@@ -209,7 +349,7 @@ export default function Page() {
             <div className={changing}>
                 {renderSwitch(page)}
             </div>
-            
+
         </div>
     )
 }
