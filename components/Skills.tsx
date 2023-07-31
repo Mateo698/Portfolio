@@ -1,18 +1,18 @@
 import styles from '../styles/Skills.module.css';
 import { useEffect, useState } from 'react';
-import reactLogo from '../public/logos/react.png';
+import reactLogo from '../public/logos/react.webp';
 import nextLogo from '../public/logos/next.png';
 import cssLogo from '../public/logos/css.png';
-import vueLogo from '../public/logos/vue.svg';
+import vueLogo from '../public/logos/vue.webp';
 import htmlLogo from '../public/logos/html.png';
 import jsLogo from '../public/logos/js.png';
-import tsLogo from '../public/logos/ts.png';
+import tsLogo from '../public/logos/ts.webp';
 import nodeLogo from '../public/logos/node.png';
-import pythonLogo from '../public/logos/python.png';
-import postgresLogo from '../public/logos/postgres.png';
+import pythonLogo from '../public/logos/python.webp';
+import postgresLogo from '../public/logos/postgres.webp';
 import firebaseLogo from '../public/logos/firebase.png';
 import javaLogo from '../public/logos/java.png';
-import scrumLogo from '../public/logos/scrum.png';
+import scrumLogo from '../public/logos/scrum.webp';
 import MVC from '../public/logos/mvc.png';
 import Database from '../public/logos/database.png';
 import versionControl from '../public/logos/github.png';
@@ -21,8 +21,8 @@ import softwareArchitecture from '../public/logos/architecture.png';
 import cloud from '../public/logos/cloud.png';
 import docker from '../public/logos/docker.png';
 import api from '../public/logos/api.png';
-import problemsolving from '../public/logos/problemsolving.png';
-import teamwork from '../public/logos/teamwork.png';
+import problemsolving from '../public/logos/problemsolving.webp';
+import teamwork from '../public/logos/teamwork.webp';
 
 
 /* eslint-disable */
@@ -34,7 +34,9 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }}
+        loading='lazy'
+         />
     },
     {
         name: 'NextJS',
@@ -44,7 +46,7 @@ const technicalSkillsList = [
             objectFit: 'contain',
             objectPosition: 'center'
         }
-        } />
+        } loading='lazy'/>
     },
     {
         name: 'CSS',
@@ -53,7 +55,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'Vue',
@@ -62,7 +64,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'HTML',
@@ -71,7 +73,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'Javascript',
@@ -80,7 +82,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'Typescript',
@@ -89,7 +91,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'NodeJS',
@@ -98,7 +100,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'Python',
@@ -107,7 +109,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'PostgreSQL',
@@ -116,7 +118,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'Firebase',
@@ -125,7 +127,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
     {
         name: 'Java',
@@ -134,7 +136,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} />
+        }} loading='lazy'/>
     },
 ]
 
