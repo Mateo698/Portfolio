@@ -35,7 +35,7 @@ const technicalSkillsList = [
             objectFit: 'contain',
             objectPosition: 'center'
         }}
-        loading='lazy'
+        loading='eager'
          />
     },
     {
@@ -46,7 +46,7 @@ const technicalSkillsList = [
             objectFit: 'contain',
             objectPosition: 'center'
         }
-        } loading='lazy'/>
+        } loading='eager'/>
     },
     {
         name: 'CSS',
@@ -55,7 +55,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'Vue',
@@ -64,7 +64,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'HTML',
@@ -73,7 +73,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'Javascript',
@@ -82,7 +82,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'Typescript',
@@ -91,7 +91,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'NodeJS',
@@ -100,7 +100,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'Python',
@@ -109,7 +109,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'PostgreSQL',
@@ -118,7 +118,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'Firebase',
@@ -127,7 +127,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
     {
         name: 'Java',
@@ -136,7 +136,7 @@ const technicalSkillsList = [
             height: '60px',
             objectFit: 'contain',
             objectPosition: 'center'
-        }} loading='lazy'/>
+        }} loading='eager'/>
     },
 ]
 
