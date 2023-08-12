@@ -32,8 +32,8 @@
 }
 
 .slideContainer{
-    width: 65%;
-    height: 46vh;
+    width: 75%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
