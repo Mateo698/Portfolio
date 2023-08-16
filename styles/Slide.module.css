@@ -1,5 +1,5 @@
 .cardContainer {
-    width: 100%;
+    width: 75vw;
     height: 64vh;
     border-radius: 15px;
     display: flex;
@@ -7,8 +7,9 @@
     margin-top: 0px;
     border: 1px solid black;
     background-color: #E0E2DB;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-right: 3vh;
+    margin-left: 3vh;
+
     overflow: hidden;
 }
 
@@ -17,6 +18,7 @@
     height: 100%;
     width: 100%;
     border-radius: 15px 0px 0px 15px;
+    object-fit: contain;
 }
 
 .information {
@@ -49,6 +51,7 @@
         width: 100%;
         height: 100vh;
         backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.5);
     }
 
 
