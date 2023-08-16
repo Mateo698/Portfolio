@@ -20,6 +20,7 @@ export default function Slide(props: SlideProps) {
                     width={500}          // Set an appropriate width
                     height={300}         // Set an appropriate height
                     objectFit="cover"
+                    priority={true}
                 />
             </div>
             <div className={styles.information}>
