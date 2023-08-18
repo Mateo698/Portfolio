@@ -37,7 +37,7 @@ export default function Page() {
                     <div className={styles.buttonContainer}>
                         
                         <button className={styles.resumeButton} onClick={handleClick}>
-                            <p style={{ fontSize: 20, fontWeight: 'lighter', margin: 0 }}>Resume</p>
+                            <p style={{ fontSize: 20, fontWeight: 'bold', margin: 0 ,fontFamily:'Nunito'}}>Resume</p>
                         </button>
 
                         

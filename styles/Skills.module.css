@@ -97,6 +97,15 @@
     margin-top: 2vh;
 }
 
+.skillImgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4vh;
+    margin: 10px;
+}
 
 
 /**Animations**/

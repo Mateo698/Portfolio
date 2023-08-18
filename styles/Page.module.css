@@ -133,6 +133,8 @@
     justify-content: center;
     padding: 3px;
     cursor: pointer;
+    background-color: white;
+    color: #000;
 }
 
 
@@ -143,6 +145,8 @@
     width: 9vw;
     border: 0px;
     cursor: pointer;
+    background-color: white;
+    color: #000;
 }
 
 .resumeButton:hover {
@@ -237,8 +241,6 @@
         height: 7vh;
         width: 22vw;
     }
-
-
 }
 
 /**Animations

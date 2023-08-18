@@ -1,0 +1,99 @@
+{
+    "technical": [
+        {
+            "name": "React",
+            "imgSrc": "/logos/react.webp"
+        },
+        {
+            "name":"NextJS",
+            "imgSrc":"/logos/next.webp"
+        },
+        {
+            "name":"NodeJS",
+            "imgSrc":"/logos/node.webp"
+        },
+        {
+            "name":"CSS",
+            "imgSrc":"/logos/css.webp"
+        },
+        {
+            "name":"VueJS",
+            "imgSrc":"/logos/vue.webp"
+        },
+        {
+            "name":"HTML",
+            "imgSrc":"/logos/html.webp"
+        },
+        {
+            "name":"Javascript",
+            "imgSrc":"/logos/js.webp"
+        },
+        {
+            "name":"Typescript",
+            "imgSrc":"/logos/ts.webp"
+        },
+        {
+            "name":"Python",
+            "imgSrc":"/logos/python.webp"
+        },
+        {
+            "name":"Java",
+            "imgSrc":"/logos/java.webp"
+        },
+        {
+            "name":"Postgres",
+            "imgSrc":"/logos/postgres.webp"
+        },
+        {
+            "name":"Firebase",
+            "imgSrc":"/logos/firebase.webp"
+        }
+    ],
+    "professional":[
+        {
+            "name":"Scrum",
+            "imgSrc":"/logos/scrum.webp"
+        },
+        {
+            "name":"Github",
+            "imgSrc":"/logos/github.webp"
+        },
+        {
+            "name":"Cloud Computing",
+            "imgSrc":"/logos/cloud.webp"
+        },
+        {
+            "name":"MVC",
+            "imgSrc":"/logos/mvc.webp"
+        },
+        {
+            "name":"Database Design",
+            "imgSrc":"/logos/database.webp"
+        },
+        {
+            "name":"Linux",
+            "imgSrc":"/logos/linux.webp"
+        },
+        {
+            "name":"APIs",
+            "imgSrc":"/logos/api.webp"
+        },
+        {
+            "name":"Problem Solving",
+            "imgSrc":"/logos/problemsolving.webp"
+        },
+        {
+            "name":"Software Engineering",
+            "imgSrc":"/logos/software.webp"
+        },
+        {
+            "name":"Dockers",
+            "imgSrc":"/logos/docker.webp"
+        },
+        {
+            "name":"Teamwork",
+            "imgSrc":"/logos/teamwork.webp"
+        }
+    ],
+    "soft":[]
+}
