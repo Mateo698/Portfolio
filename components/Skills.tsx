@@ -29,7 +29,7 @@ const technicalSkills = () => {
                                     width={10}          // Set an appropriate width
                                     height={10}         // Set an appropriate height
                                     objectFit="cover"
-                                    
+                                    priority
                                 />
                             </div>
                             <div className={styles.skillNameContainer}>
@@ -61,7 +61,7 @@ const professionalSkills = () => {
                                     width={10}          // Set an appropriate width
                                     height={10}         // Set an appropriate height
                                     objectFit="cover"
-                                    
+                                    priority
                                 />
                             </div>
                             <div className={styles.skillNameContainer}>
