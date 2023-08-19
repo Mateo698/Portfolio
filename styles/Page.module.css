@@ -168,8 +168,8 @@
 }
 
 .image {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 90vh;
     border-radius: 50%;
     border: 5px solid #25283D;
     object-fit: cover;
@@ -185,20 +185,28 @@
 .text2 {
     font-weight: heavier;
     font-size: 70px;
-    margin-bottom: 0;
-    margin-top: 0;
+    
 }
 
 @media(max-width: 768px) {
     .container {
-        width: 100vw;
-        flex-direction: column-reverse;
+        
+        
         justify-content: center;
         align-items: center;
         display: flex;
         flex-wrap: nowrap;
-    }
 
+        width: 100vw;
+        height: 80vh;
+        flex-grow: 1;
+        flex-direction: column-reverse;
+        
+        
+        
+        
+    }
+    
     .description {
         padding-top: 4vh;
         padding-left: 4vw;
@@ -224,8 +232,8 @@
     }
 
     .imageContainer {
-        width: 50vw;
-        height: 35vh;
+        width: 70vw;
+        height: 70vh;
         padding-top: 10vh;
     }
 
@@ -239,7 +247,7 @@
     .resumeButton {
         border-radius: 15px;
         height: 7vh;
-        width: 22vw;
+        width: 30vw;
     }
 }
 

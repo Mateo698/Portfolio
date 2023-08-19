@@ -2,6 +2,7 @@ import styles from '../styles/Page.module.css';
 import Profile from '../public/ProfileLowerRes.jpg';
 import { RxGithubLogo } from "react-icons/rx";
 import { RxLinkedinLogo } from 'react-icons/rx';
+import Image from 'next/image';
 
 
 export default function Page() {
@@ -35,18 +36,31 @@ export default function Page() {
                         </button>
                     </div>
                     <div className={styles.buttonContainer}>
-                        
+
                         <button className={styles.resumeButton} onClick={handleClick}>
-                            <p style={{ fontSize: 20, fontWeight: 'bold', margin: 0 ,fontFamily:'Nunito'}}>Resume</p>
+                            <p style={{ fontSize: 20, fontWeight: 'bold', margin: 0, fontFamily: 'Nunito' }}>Resume</p>
                         </button>
 
-                        
+
                     </div>
                 </div>
-                
+
             </div>
             <div className={styles.imageContainer}>
-                <img className={styles.image} src={Profile.src} alt="Profile" height={500} />
+
+                <Image
+                    src='/ProfileLowerRes.jpg'
+                    alt="Project Image"
+                    quality={100}
+                    layout="responsive"  // Use responsive layout to maintain aspect ratio
+                    width={300}          // Set an appropriate width
+                    height={300}         // Set an appropriate height
+                    objectFit="cover"
+                    priority={true}
+                    className={styles.image}
+                    
+                />
+
             </div>
         </div>
     )

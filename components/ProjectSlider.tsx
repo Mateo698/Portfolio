@@ -1,12 +1,8 @@
 import Slide from "./Slide"
-import Image from "next/image"
 import { useState, useRef, useEffect } from "react"
 import styles from "../styles/ProjectSlider.module.css"
-import logo from "../public/logo.jpg"
-import syri from "../public/syri.png"
-import eShop from "../public/eshop.png"
-import competitiva from "../public/competitiva.png"
 import projectData from "../data/projects.json"
+import React from "react"
 
 interface Project {
     image: string,
@@ -28,6 +24,17 @@ export default function ProjectSlider() {
     /* eslint-disable */
     const [index, setIndex] = useState(0)
     const refs = slides.map(() => useRef<HTMLDivElement>(null))
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 700;
+    React.useEffect(() => {
+        const handleResizeWindow = () => setWidth(window.innerWidth);
+        // subscribe to window resize event "onComponentDidMount"
+        window.addEventListener("resize", handleResizeWindow);
+        return () => {
+            // unsubscribe "onComponentDestroy"
+            window.removeEventListener("resize", handleResizeWindow);
+        };
+    }, []);
 
 
 
@@ -56,22 +63,50 @@ export default function ProjectSlider() {
 
     }
 
-
-
-    return (
-        <div className={styles.container}>
-            <div className={styles.arrowLeft} onClick={() => changeSlide("up")}></div>
-            <div className={styles.slideContainer}>
-                {slides.map((slide, index) => {
-                    return (
-                        <div key={index} className={styles.slide} ref={refs[index]}>
-                            {slide}
-                        </div>
-                    )
-                })
-                }
+    if (width > breakpoint) {
+        return (
+            <div className={styles.container}>
+                <div className={styles.arrowLeft} onClick={() => changeSlide("up")}></div>
+                <div className={styles.slideContainer}>
+                    {slides.map((slide, index) => {
+                        return (
+                            <div key={index} className={styles.slide} ref={refs[index]}>
+                                {slide}
+                            </div>
+                        )
+                    })
+                    }
+                </div>
+                <div className={styles.arrowRight} onClick={() => changeSlide("down")}></div>
             </div>
-            <div className={styles.arrowRight} onClick={() => changeSlide("down")}></div>
-        </div>
-    )
+        )
+    } else {
+        return (
+            <div className={styles.container}>
+                <div className={styles.slideContainer}>
+                    {slides.map((slide, index) => {
+                        return (
+                            <div key={index} className={styles.slide} ref={refs[index]}>
+                                {slide}
+                            </div>
+                        )
+                    })
+                    }
+                </div>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-evenly",
+                    alignItems: "center",
+                    width: "100%",
+
+                }}>
+                    <div className={styles.arrowLeft} onClick={() => changeSlide("up")}></div>
+                    <div className={styles.arrowRight} onClick={() => changeSlide("down")}></div>
+
+                </div>
+            </div>
+        )
+    }
+
 }

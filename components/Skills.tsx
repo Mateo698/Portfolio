@@ -18,7 +18,7 @@ const technicalSkills = () => {
         <div className={styles.contentContainer}>
             <h2 style={{ fontWeight: 'lighter' }}>Programming Languages and Frameworks i&apos;m familiar with</h2>
             <div className={styles.skills}>
-                {skills.technical.map((skill,index) => {
+                {skills.technical.map((skill, index) => {
                     return (
                         <div className={styles.skillContainer} key={index}>
                             <div className={styles.skillImgContainer}>
@@ -50,7 +50,7 @@ const professionalSkills = () => {
         <div className={styles.contentContainer}>
             <h2 style={{ fontWeight: 'lighter' }}>Software Engineering skills i&apos;ve acquired at ICESI University</h2>
             <div className={styles.skills}>
-                {skills.professional.map((skill,index) => {
+                {skills.professional.map((skill, index) => {
                     return (
                         <div className={styles.skillContainer} key={index}>
                             <div className={styles.skillImgContainer}>
@@ -82,6 +82,14 @@ const softSkills = () => {
     return (
         <div className={styles.contentContainer}>
             <h2 style={{ fontWeight: 'lighter' }}>Soft skills i&apos;ve acquired through out my personal and academic life</h2>
+            <div className={styles.skillsList}>
+                {skills.soft.map((skill, index) => {
+                    return (
+                        <h3 key={index}>{skill.name}</h3>
+                    )
+                }
+                )}
+            </div>
         </div>
     )
 }

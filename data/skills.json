@@ -89,11 +89,38 @@
         {
             "name":"Dockers",
             "imgSrc":"/logos/docker.webp"
-        },
-        {
-            "name":"Teamwork",
-            "imgSrc":"/logos/teamwork.webp"
         }
     ],
-    "soft":[]
+    "soft":[{
+        "name":"Communication",
+        "imgSrc":"/logos/communication.webp"
+    },
+    {
+        "name":"Leadership",
+        "imgSrc":"/logos/leadership.webp"
+    },
+    {
+        "name":"Creativity",
+        "imgSrc":"/logos/creativity.webp"
+    },
+    {
+        "name":"Adaptability",
+        "imgSrc":"/logos/adaptability.webp"
+    },
+    {
+        "name":"Time Management",
+        "imgSrc":"/logos/timemanagement.webp"
+    },
+    {
+        "name":"Critical Thinking",
+        "imgSrc":"/logos/criticalthinking.webp"
+    },
+    {
+        "name":"Problem Solving",
+        "imgSrc":"/logos/problemsolving.webp"
+    },
+    {
+        "name":"Teamwork",
+        "imgSrc":"/logos/teamwork.webp"
+    }]
 }
