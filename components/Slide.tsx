@@ -10,17 +10,15 @@ interface SlideProps {
 
 export default function Slide(props: SlideProps) {
     return (
-        <div className={styles.cardContainer} style={{ cursor: 'pointer' }} onClick={() => window.open(props.link)}>
+        <div className={styles.cardContainer} onClick={() => window.open(props.link)}>
             <div className={styles.imageContainer}>
                 <Image
                     src={props.image}
                     alt="Project Image"
-                    quality={100}
-                    layout="responsive"  // Use responsive layout to maintain aspect ratio
-                    width={500}          // Set an appropriate width
-                    height={300}         // Set an appropriate height
-                    objectFit="cover"
                     priority={true}
+                    fill={true}
+                    objectFit='cover'
+                    layout='fill'
                 />
             </div>
             <div className={styles.information}>

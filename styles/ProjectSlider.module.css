@@ -46,20 +46,23 @@
 @media(max-width: 768px) {
     .container{
         flex-direction: column;
+        
     }
 
     .slideContainer{
         width: 63vw;
+        
     }
     
     .arrowLeft{
+        
         clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
         margin-right: 2vw;
         margin-top: 2vh;
         margin-bottom: 2vh;
         background-color: white;
         width: 9vw;
-        height: 2vh;
+        height: 4vh;
         cursor: pointer;
     }
     
@@ -71,7 +74,7 @@
         margin-bottom: 2vh;
         background-color: white;
         width: 9vw;
-        height: 2vh;
+        height: 4vh;
         top: 0;
     }
 }
