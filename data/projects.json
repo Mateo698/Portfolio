@@ -3,24 +3,53 @@
         "imageSrc": "/syri.png",
         "title": "Syri a la mano",
         "description": "Syri a la mano fue una aplicacion web pensada para oficina de Multimedios en la que se podia administrar las aperturas, cierres y soportes requeridos en la Universidad ICESI, pensado para los empleados y monitores que requieren un manejo de la informacion mas eficiente y rapido. Hecha en NextJS y NodeJS",
-        "link": "https://github.com/Mateo698/Syri-A-La-Mano"
+        "link": "https://github.com/Mateo698/Syri-A-La-Mano",
+        "technologies": [
+            "NextJS",
+            "NodeJS",
+            "PostgreSQL",
+            "CSS",
+            "ReactJS",
+            "TypeScript"
+        ]
     },
     {
         "imageSrc": "/eshop.png",
         "title": "E-Shop Televisores",
         "description": "Fue un proyecto final del curso Computacion en Internet la cual permitia la creacion de usuarios, compra de televisores y administracion de los mismos. Hecha en SpringBoot y NextJS con base de datos PostgreSQL",
-        "link": "https://github.com/IcesiComputacionInternet/TallerFinal/tree/Grupo_8"
+        "link": "https://github.com/IcesiComputacionInternet/TallerFinal/tree/Grupo_8",
+        "technologies": [
+            "NextJS",
+            "Java",
+            "SpringBoot",
+            "PostgreSQL",
+            "CSS",
+            "ReactJS"
+        ]
     },
     {
         "imageSrc": "/competitiva.png",
         "title": "Red de programacion competitiva",
         "description": "Fue un proyecto final del curso Proyecto Integrador 1 la cual permitia la administracion de usuarios, torneos e inscripciones de los estudiantes a los diferentes torneos. Hecha en NextJS y NodeJS con base de datos PostgreSQL",
-        "link": "https://github.com/redprogramacioncompetitiva/contests-management-system-2022-1"
+        "link": "https://github.com/redprogramacioncompetitiva/contests-management-system-2022-1",
+        "technologies": [
+            "NextJS",
+            "NodeJS",
+            "PostgreSQL",
+            "CSS",
+            "ReactJS"
+        ]
     },
     {
         "imageSrc":"/picture.png",
         "title": "Picture Uploader (Technical Test)",
         "description": "Fue un proyecto de prueba tecnica para la empresa Menupp, en dicha prueba se requeria una aplicación web que permitiera la administracion de imagenes, permitiendo subir, eliminar y ver las imagenes subidas. Hecha en VueJS, Quasar y Firebase",
-        "link": "https://github.com/Mateo698/picture-uploader"
+        "link": "https://github.com/Mateo698/picture-uploader",
+        "technologies": [
+            "VueJS",
+            "Quasar",
+            "Firebase",
+            "CSS"
+        ]
     }
 ]

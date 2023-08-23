@@ -6,8 +6,8 @@
     flex-direction: row;
     margin-top: 0px;
     background-color: #E0E2DB;
-    margin-right: 3vh;
-    margin-left: 3vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
     cursor: pointer;
     overflow: hidden;
 }
@@ -39,6 +39,38 @@
     margin-top: 0px;
 }
 
+.aboutBttn {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 30vw;
+}
+
+.technologies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    border: 1px solid black;
+}
+
+.techTag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 3vw;
+    font-weight: bold;
+    width: 20vw;
+    height: 5vh;
+    margin: 1vh;
+}
+
 .cardContainer:hover {
 
     .information {
@@ -62,27 +94,32 @@
 
 
 @media (max-width: 768px) {
-    .cardContainer{
-        margin-left: 0px;
-        margin-right: 0px;
-        
-    }
-
-    .card {
+    .cardContainer {
         flex-direction: column;
-        width: 80%;
-        height: 80vh;
-
+        align-items: center;
+        height: 70vh;
     }
 
     .imageContainer {
         width: 100%;
-        height: 45%;
+        height: 150px;
+        object-fit: fill;
     }
 
     .text {
         width: 100%;
-        height: 50%;
+        height: 30vh;
+    }
+
+
+    .title {
+        font-size: 5vw;
+        font-weight: bold;
+        margin-bottom: 10px;
+        height: 10vh;
+        width: 100%;
+        color: black;
+        text-align: center;
     }
 }
 
@@ -102,24 +139,26 @@
     .text {
         width: 65%;
         height: 100%;
-        
+
     }
 }
 
 @-webkit-keyframes fade-in {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes fade-in {
+}
+
+@keyframes fade-in {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
+}

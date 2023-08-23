@@ -14,7 +14,7 @@ interface Project {
 
 const slides = projectData.map((project, index) => {
     return (
-        <Slide key={index} image={project.imageSrc} title={project.title} description={project.description} link={project.link} />
+        <Slide key={index} image={project.imageSrc} title={project.title} description={project.description} link={project.link} tech={project.technologies}/>
     )
 }
 )
