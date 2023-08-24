@@ -99,7 +99,8 @@ export default function ProjectSlider() {
                     justifyContent: "space-evenly",
                     alignItems: "center",
                     width: "100%",
-                    border: "2px solid green"
+                    height: "10%",
+                    marginTop: "2vh"
 
                 }}>
                     <div className={styles.arrowLeft} onClick={() => changeSlide("up")}></div>

@@ -51,6 +51,9 @@
 
     .slideContainer{
         width: 79vw;
+        height: 62vh;
+        padding-top: 0;
+        align-items: center;
     }
     
     .arrowLeft{

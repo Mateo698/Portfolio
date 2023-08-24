@@ -4,8 +4,8 @@
     border-radius: 15px;
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
-    background-color: #E0E2DB;
+    margin-top: 1vh;
+    background-color: white;
     margin-right: 2vw;
     margin-left: 2vw;
     cursor: pointer;
@@ -19,6 +19,7 @@
     border-radius: 15px 0px 0px 15px;
     object-fit: contain;
     position: relative;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .information {
@@ -31,7 +32,7 @@
 .title {
     font-size: 2vw;
     font-weight: bold;
-    margin-bottom: 10px
+    margin-bottom: 2vh
 }
 
 .description {
@@ -42,7 +43,15 @@
 .aboutBttn {
     margin-top: 3vh;
     margin-bottom: 3vh;
-    width: 30vw;
+    width: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    background-color: #58A4B0;
 }
 
 .technologies{
@@ -52,57 +61,37 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 20vh;
-    border: 1px solid black;
+    height: 15vh;
+    border-bottom: 1px solid #dfdfdf;
 }
 
 .techTag{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    color: black;
+    background-color: #23ce6b;
+    color: white;
     border-radius: 5px;
     padding: 5px;
-    font-size: 3vw;
+    font-size: 3.3vw;
     font-weight: bold;
-    width: 20vw;
-    height: 5vh;
+    width: 21vw;
+    height: 4vh;
     margin: 1vh;
 }
 
-.cardContainer:hover {
 
-    .information {
-        -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        margin-left: -100%;
-        visibility: visible;
-        width: 100%;
-        height: 100vh;
-        backdrop-filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-
-
-
-
-}
-
-
-
+/**Mobile**/
 @media (max-width: 768px) {
     .cardContainer {
         flex-direction: column;
         align-items: center;
-        height: 70vh;
+        height: 59vh;
     }
 
     .imageContainer {
         width: 100%;
-        height: 150px;
+        height: 40%;
         object-fit: fill;
     }
 
@@ -115,19 +104,21 @@
     .title {
         font-size: 5vw;
         font-weight: bold;
-        margin-bottom: 10px;
-        height: 10vh;
+        margin-bottom: 1vh;
+        height: 8vh;
         width: 100%;
         color: black;
         text-align: center;
+        border-bottom: 1px solid #dfdfdf;
     }
 }
 
+/**Desktop**/
 @media (min-width: 769px) {
     .card {
         flex-direction: row;
         width: 50vw;
-        height: 40vh;
+        height: 60vh;
         
     }
 
@@ -140,6 +131,21 @@
         width: 65%;
         height: 100%;
 
+    }
+
+    .cardContainer:hover {
+        .information {
+            -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            margin-left: -100%;
+            visibility: visible;
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(5px);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
 }
 

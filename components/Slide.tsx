@@ -44,7 +44,7 @@ export default function Slide(props: SlideProps) {
         )
     } else {
         return (
-            <div className={styles.cardContainer} onClick={() => window.open(props.link)}>
+            <div className={styles.cardContainer}>
                 <div className={styles.imageContainer}>
                     <Image
                         src={props.image}
@@ -69,7 +69,7 @@ export default function Slide(props: SlideProps) {
                     }
                 </div>
                 <button className={styles.aboutBttn}>
-                    <p style={{ fontSize: 20, fontWeight: 'bold', margin: 0, fontFamily: 'Nunito' }}>About</p>
+                    <p style={{ fontSize: 18, fontWeight: 'bold', margin: 0, fontFamily: 'Nunito' }}>About</p>
                 </button>
                 <div className={styles.information}>
                     <h3 className={styles.title}>{props.title}</h3>
