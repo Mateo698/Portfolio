@@ -2,7 +2,7 @@
     {
         "imageSrc": "/syri.png",
         "title": "Syri a la mano",
-        "description": "Syri a la mano fue una aplicacion web pensada para oficina de Multimedios en la que se podia administrar las aperturas, cierres y soportes requeridos en la Universidad ICESI, pensado para los empleados y monitores que requieren un manejo de la informacion mas eficiente y rapido. Hecha en NextJS y NodeJS",
+        "description": "Syri a la mano  was a web application designed for the Multimedia office at ICESI University in which you could manage the openings, closings and supports required at ICESI University, designed for employees and monitors who require a more efficient and fast information management. Made in NextJS and NodeJS.",
         "link": "https://github.com/Mateo698/Syri-A-La-Mano",
         "technologies": [
             "NextJS",
@@ -16,7 +16,7 @@
     {
         "imageSrc": "/eshop.png",
         "title": "E-Shop Televisores",
-        "description": "Fue un proyecto final del curso Computacion en Internet la cual permitia la creacion de usuarios, compra de televisores y administracion de los mismos. Hecha en SpringBoot y NextJS con base de datos PostgreSQL",
+        "description": "It was a final project of the Internet Computing course which allowed the creation of users, purchase of TVs and administration of them. Made in SpringBoot and NextJS with PostgreSQL database.",
         "link": "https://github.com/IcesiComputacionInternet/TallerFinal/tree/Grupo_8",
         "technologies": [
             "NextJS",
@@ -29,8 +29,8 @@
     },
     {
         "imageSrc": "/competitiva.png",
-        "title": "Red de programacion competitiva",
-        "description": "Fue un proyecto final del curso Proyecto Integrador 1 la cual permitia la administracion de usuarios, torneos e inscripciones de los estudiantes a los diferentes torneos. Hecha en NextJS y NodeJS con base de datos PostgreSQL",
+        "title": "Competitive Programming Network",
+        "description": "It was a final project of the course Capstone Project 1 which allowed the administration of users, tournaments and registration of students to the different tournaments. Made in NextJS and NodeJS with PostgreSQL database.",
         "link": "https://github.com/redprogramacioncompetitiva/contests-management-system-2022-1",
         "technologies": [
             "NextJS",
@@ -43,7 +43,7 @@
     {
         "imageSrc":"/picture.png",
         "title": "Picture Uploader (Technical Test)",
-        "description": "Fue un proyecto de prueba tecnica para la empresa Menupp, en dicha prueba se requeria una aplicación web que permitiera la administracion de imagenes, permitiendo subir, eliminar y ver las imagenes subidas. Hecha en VueJS, Quasar y Firebase",
+        "description": "It was a technical test project for the company Menupp, in this test was required a web application that would allow the management of images, allowing upload, delete and view the uploaded images. Made in VueJS, Quasar and Firebase.",
         "link": "https://github.com/Mateo698/picture-uploader",
         "technologies": [
             "VueJS",
